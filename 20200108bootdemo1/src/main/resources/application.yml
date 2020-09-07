@@ -1,0 +1,30 @@
+#服务器相关内容
+
+#端口号
+server:
+  port: 8080
+# 应用的虚拟目录
+  servlet:
+    context-path: /
+# 配置数据源
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/scott
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+  thymeleaf:
+    cache: false
+
+#配置mybatis
+
+mybatis:
+  type-aliases-package: com.aaa.entity
+  mapper-locations: mapper/*.xml
+
+
+#日志输出
+logging:
+  level.com.aaa.mapper: debug
+
