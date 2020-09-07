@@ -23,6 +23,7 @@ public class EmpController {
     @RequestMapping("/query")
     @ResponseBody
     public List<Emp> query(){
+System.out.println("A修改了该文件");
         List<Emp> empList = empService.query();
         return empList;
     }
