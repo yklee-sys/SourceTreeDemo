@@ -23,8 +23,6 @@ public class EmpController {
     @RequestMapping("/query")
     @ResponseBody
     public List<Emp> query(){
-
->>>>>>> origin/master
         List<Emp> empList = empService.query();
         return empList;
     }
