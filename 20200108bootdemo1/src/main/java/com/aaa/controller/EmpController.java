@@ -23,10 +23,7 @@ public class EmpController {
     @RequestMapping("/query")
     @ResponseBody
     public List<Emp> query(){
-<<<<<<< HEAD
-System.out.println("B修改了该文件");
-=======
-System.out.println("A修改了该文件");
+
 >>>>>>> origin/master
         List<Emp> empList = empService.query();
         return empList;
